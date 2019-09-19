@@ -15,14 +15,15 @@ usage: main.py [-h] [-cl2 | -cl3]
 
 Bioinf project. The arguments can be passed in any order.
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -cl2                  in order to classify two cancer types.
-  -cl3                  in order to classify two cancer types AND sane.
-  -svm                  train a Support Vector Machine classifier
-  -knn                  train a K Nearest Neighbors classifier
-  -rforest              train a Random Forest classifier
-  -kmeans               train a Kmeans clustering
+optional arguments: 
+
+  -h, --help            show this help message and exit 
+  -cl2                  in order to classify two cancer types. 
+  -cl3                  in order to classify two cancer types AND sane. 
+  -svm                  train a Support Vector Machine classifier 
+  -knn                  train a K Nearest Neighbors classifier 
+  -rforest              train a Random Forest classifier 
+  -kmeans               train a Kmeans clustering 
   -hierarc              train an Agglomerative Hierarchical clustering
   -over                 imbalance: Random Oversampling
   -smote                imbalance: SMOTE
