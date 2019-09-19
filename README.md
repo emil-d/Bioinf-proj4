@@ -17,50 +17,50 @@ Bioinf project. The arguments can be passed in any order.
 
 optional arguments: 
 
-  -h, --help            show this help message and exit 
-  -cl2                  in order to classify two cancer types. 
-  -cl3                  in order to classify two cancer types AND sane. 
-  -svm                  train a Support Vector Machine classifier 
-  -knn                  train a K Nearest Neighbors classifier 
-  -rforest              train a Random Forest classifier 
-  -kmeans               train a Kmeans clustering 
-  -hierarc              train an Agglomerative Hierarchical clustering
-  -over                 imbalance: Random Oversampling
-  -smote                imbalance: SMOTE
-  -ttest                feature selection: ttest per chromosoma and per cpg
+*  -h, --help            show this help message and exit 
+*  -cl2                  in order to classify two cancer types. 
+*  -cl3                  in order to classify two cancer types AND sane. 
+*  -svm                  train a Support Vector Machine classifier 
+*  -knn                  train a K Nearest Neighbors classifier 
+*  -rforest              train a Random Forest classifier 
+*  -kmeans               train a Kmeans clustering 
+*  -hierarc              train an Agglomerative Hierarchical clustering
+*  -over                 imbalance: Random Oversampling
+*  -smote                imbalance: SMOTE
+*  -ttest                feature selection: ttest per chromosoma and per cpg
                         site - 2 classes
-  -fisher               feature selection: fisher criterion - 3 classes
-  -anova                feature selection: anova - 3 classes
-  -pca                  dimensionality reduction: Principal Component Analisys
-  -lda                  dimensionality reduction: Linear Discriminant Analysis
-  -sfs                  feature selection - wrapper: Step Forward Selection
+*  -fisher               feature selection: fisher criterion - 3 classes
+*  -anova                feature selection: anova - 3 classes
+*  -pca                  dimensionality reduction: Principal Component Analisys
+*  -lda                  dimensionality reduction: Linear Discriminant Analysis
+*  -sfs                  feature selection - wrapper: Step Forward Selection
                         (nearly unfeasible)
-  -ga                   feature selection - wrapper: Genetic Algorithm
-  -d DOWNLOAD DOWNLOAD, --download DOWNLOAD DOWNLOAD
+*  -ga                   feature selection - wrapper: Genetic Algorithm
+*  -d DOWNLOAD DOWNLOAD, --download DOWNLOAD DOWNLOAD
                         download Adenoma and Adenocarcinoma and Squamous Cell
                         Neoplasm data from Genomic Data Common. It needs 2
                         parameters: first parameter is the destination folder;
                         second parameters is the number of files to be
                         downloaded for each class
-  -ds DOWNLOADSANE DOWNLOADSANE, --downloadsane DOWNLOADSANE DOWNLOADSANE
+*  -ds DOWNLOADSANE DOWNLOADSANE, --downloadsane DOWNLOADSANE DOWNLOADSANE
                         download Sane data from Genomic Data CommonIt needs 2
                         parameters: first parameter is the destination folder;
                         second parameters is the number of files to be
                         downloaded
-  -s STORE, --store STORE
+*  -s STORE, --store STORE
                         concatenate files belonging to same cancer type and
                         store them in a binary file
-  --alpha ALPHA         to set a different ALPHA: ttest parameter - default is
+*  --alpha ALPHA         to set a different ALPHA: ttest parameter - default is
                         0.001
-  --perc PERC           to set PERC of varaince explained by the features kept
+*  --perc PERC           to set PERC of varaince explained by the features kept
                         by PCA
-  -rs R_STATE, --r_state R_STATE
+*  -rs R_STATE, --r_state R_STATE
                         to set a user defined Random State - default is 8
-  --only_chrms_t        select only chrms for ttest
-  --crossval            to do crossvalidation OR in case of unsupervised to
+*  --only_chrms_t        select only chrms for ttest
+*  --crossval            to do crossvalidation OR in case of unsupervised to
                         plot the Inertia curve
-  --plot_lc             plot the learning curve
-  --remove_nan_cpgs REMOVE_NAN_CPGS
+*  --plot_lc             plot the learning curve
+*  --remove_nan_cpgs REMOVE_NAN_CPGS
                         IF True: removes features containing at least one NaN
                         value. IF False: NaN are substituted by the mean over
                         the feature. The old file resulted by feature
