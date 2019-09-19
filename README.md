@@ -14,6 +14,7 @@ usage: main.py [-h] [-cl2 | -cl3]
                [--remove_nan_cpgs REMOVE_NAN_CPGS]
 
 Bioinf project. The arguments can be passed in any order.
+The dataset MUST be unzipped in a directory called 'data' 
 
 optional arguments: 
 
